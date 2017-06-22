@@ -10,15 +10,15 @@ export class AuthService {
 
     create(authEnv) {
         this.lock = new Auth0Lock(authEnv.auth0.client_id, authEnv.auth0.domain, this.authOptions(authEnv));
-        Observable.fromEvent(this.lock, "authenticated").subscribe(result => this.authenticatedCB(result));
+        Observable.fromEvent(this.lock, 'authenticated').subscribe(result => this.authenticatedCB(result));
     }
 
     private async authenticatedCB(authResult) {
         this.lock.hide();
-        localStorage.setItem("access_token", authResult.accessToken);
-        let profile = await this.getUserInfo(authResult.accessToken);
-        let img = profile["https://daily-ui.logos.com/user_metadata"] && profile["https://daily-ui.logos.com/user_metadata"].picture;
-        if (img) profile.picture = img;
+        localStorage.setItem('access_token', authResult.accessToken);
+        const profile = await this.getUserInfo(authResult.accessToken);
+        const img = profile['https://daily-ui.logos.com/user_metadata'] && profile['https://daily-ui.logos.com/user_metadata'].picture;
+        if (img) { profile.picture = img };
         localStorage.setObject('userProfile', profile);
         this.onThen.emit();
     }
@@ -26,8 +26,7 @@ export class AuthService {
     private async getUserInfo(token) {
         return new Promise<any>((resolve, reject) => {
             this.lock.getUserInfo(token, (err, profile) => {
-                if (err) reject(err);
-                else resolve(profile);
+                if (err) { reject(err); } else { resolve(profile); }
             })
         })
     }
@@ -36,21 +35,21 @@ export class AuthService {
         return {
             oidcConformant: true,
             closable: false,
-            language: "pt-br",
-            container: "auth-lock",
+            language: 'pt-br',
+            container: 'auth-lock',
             rememberLastLogin: false,
             allowSignUp: false,
             theme: {
                 logo: env.auth0.logo_uri,
-                primaryColor: "#ff9800",
-                foregroundColor: "#ff9800",
-                title: ""
+                primaryColor: '#ff9800',
+                foregroundColor: '#ff9800',
+                title: ''
             },
             languageDictionary: {
-                title: "",
+                title: '',
                 error: {
                     login: {
-                        "invalid_grant": "Senha ou email incorretos"
+                        'invalid_grant': 'Senha ou email incorretos'
                     }
                 }
             },
@@ -61,7 +60,7 @@ export class AuthService {
                     audience: env.auth0.audience,
                     scope: env.auth0.scope
                 },
-                responseType: "token"
+                responseType: 'token'
             }
         }
     }
