@@ -16,4 +16,4 @@ export * from './auth.service';
         AuthComponent
     ], providers: [AuthService]
 })
-export class LogosAuthModule { }
+export class Auth0Module { }

@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AuthService } from './auth.service';
 
 @Component({
-  selector: 'logos-auth',
+  selector: 'login-auth0',
   templateUrl: 'auth.component.html'
 })
 export class AuthComponent implements OnInit {
