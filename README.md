@@ -1,5 +1,6 @@
 # Components for Angular
-[![npm version](https://badge.fury.io/js/%40angular%2Fmaterial.svg)](https://www.npmjs.com/package/angular2-cmps)
+
+[![npm version](https://badge.fury.io/js/angular2-cmps.svg)](https://badge.fury.io/js/angular2-cmps)
 
 ### Installation
 
@@ -10,8 +11,8 @@ The latest release of Angular 2 Componets can be installed from npm
 ### Getting started
 
 ### Project status
+
 This project is currently in beta and under active development.
-During beta, new features will be added regularly and APIs will evolve based on user feedback.
 
 #### Feature status
 
