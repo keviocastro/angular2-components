@@ -1,0 +1,20 @@
+sudo: true
+dist: trusty
+language: node_js
+node_js:
+  - '6'
+addons:
+  chrome: stable
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+install:
+  - npm install
+
+script:
+  - ./node_modules/@angular/cli/bin/ng test -w false
+  - ./node_modules/@angular/cli/bin/ng e2e -w false
+  - ./node_modules/@angular/cli/bin/ng lint
