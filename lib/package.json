@@ -9,11 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:auth": "nglb --rootDir src/app/login --outDir shared"
+    "build:auth": "nglb --rootDir src/app/auth --outDir lib"
   },
   "private": true,
   "dependencies": {
-    "@angular-mdl/core": "^4.0.8",
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",

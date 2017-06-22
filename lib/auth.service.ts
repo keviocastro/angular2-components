@@ -59,7 +59,7 @@ export class AuthService {
                 redirectUrl: env.host,
                 params: {
                     audience: env.auth0.audience,
-                    scope: 'openid profile email'
+                    scope: env.auth0.scope
                 },
                 responseType: "token"
             }
