@@ -1,7 +1,12 @@
 {
-  "name": "logos-shared",
+  "name": "angular2-cmps",
   "version": "0.0.1",
   "license": "MIT",
+  "description": "Angular 2 util",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keviocastro/angular2-components.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
