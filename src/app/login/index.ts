@@ -1,11 +1,11 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './login.component';
-import { AuthService } from './login.service';
+import { AuthComponent } from './auth.component';
+import { AuthService } from './auth.service';
 import { MdlModule } from '@angular-mdl/core';
 
-export * from './login.component';
-export * from './login.service';
+export * from './auth.component';
+export * from './auth.service';
 
 @NgModule({
     imports: [CommonModule, MdlModule],
@@ -17,4 +17,4 @@ export * from './login.service';
         AuthComponent
     ], providers: [AuthService]
 })
-export class LogosLoginModule { }
+export class LogosAuthModule { }

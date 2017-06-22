@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './login.component';
-import { AuthService } from './login.service';
+import { AuthComponent } from './auth.component';
+import { AuthService } from './auth.service';
 import { MdlModule } from '@angular-mdl/core';
-export * from './login.component';
-export * from './login.service';
-var LogosLoginModule = (function () {
-    function LogosLoginModule() {
+export * from './auth.component';
+export * from './auth.service';
+var LogosAuthModule = (function () {
+    function LogosAuthModule() {
     }
-    return LogosLoginModule;
+    return LogosAuthModule;
 }());
-export { LogosLoginModule };
-LogosLoginModule.decorators = [
+export { LogosAuthModule };
+LogosAuthModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule, MdlModule],
                 exports: [AuthComponent],
@@ -24,5 +24,5 @@ LogosLoginModule.decorators = [
             },] },
 ];
 /** @nocollapse */
-LogosLoginModule.ctorParameters = function () { return []; };
+LogosAuthModule.ctorParameters = function () { return []; };
 //# sourceMappingURL=index.js.map

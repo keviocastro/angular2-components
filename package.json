@@ -9,16 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:login": "nglb --rootDir src/app/login --outDir login-dist"
+    "build:auth": "nglb --rootDir src/app/login --outDir shared"
   },
   "private": true,
-  "peerDependencies": {
-    "@angular/common": ">=2.0.0 <5.0.0 || >=4.0.0-beta <5.0.0",
-    "@angular/core": ">=2.0.0 <5.0.0 || >=4.0.0-beta <5.0.0",
-    "@angular/forms": "^2.4.0",
-    "rxjs": ">=5.0.0 || >=5.0.0-beta",
-    "zone.js": ">=0.7.0"
-  },
   "dependencies": {
     "@angular-mdl/core": "^4.0.8",
     "@angular/animations": "^4.0.0",
