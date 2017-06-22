@@ -9,8 +9,7 @@ branches:
 node_js:
   - '6'
 before_install:
-  - npm i -g npm
-  - npm i -g @angular/cli
+  - npm i
 script:
   - npm test
   - npm e2e
