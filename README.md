@@ -1,6 +1,7 @@
 # Components for Angular
 
 [![npm version](https://badge.fury.io/js/angular2-cmps.svg)](https://badge.fury.io/js/angular2-cmps)
+[![Build Status](https://travis-ci.org/keviocastro/angular2-components.svg?branch=master)](https://travis-ci.org/keviocastro/angular2-components)
 [![Code Climate](https://codeclimate.com/github/keviocastro/angular2-components.png)](https://codeclimate.com/github/keviocastro/angular2-components)
 
 ### Installation
