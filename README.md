@@ -20,7 +20,7 @@ This project is currently in beta and under active development.
 
 | Directive          |Main features                  | Status      | Description         |
 |------------------|---------------------------------|-------------|---------------------|
-| login-auth0      | Login with multiple providers   |   Available | Add login to your application with auth0. <br>See See: https://auth0.com/docs/quickstart/spa/angular2/00-login      |
+| login-auth0      | Login with multiple providers   |   Available | Add login to your application with auth0. <br>See: https://auth0.com/docs/quickstart/spa/angular2/00-login      |
 
 
 
