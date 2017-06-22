@@ -11,6 +11,6 @@ node_js:
 before_install:
   - npm i
 script:
-  - npm test
-  - npm e2e
-  - npm lint
+  - ./node_modules/@angular/cli/bin/ng test -w false
+  - ./node_modules/@angular/cli/bin/ng e2e -w false
+  - ./node_modules/@angular/cli/bin/ng lint
