@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+node_js:
+  - '6'
+before_install:
+  - npm i -g npm
+  - npm i -g @angular/cli
+script:
+  - npm test
+  - npm e2e
+  - npm lint
